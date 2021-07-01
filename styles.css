@@ -24,6 +24,9 @@ html {
     margin: 3.5rem 0 1.5rem 0.2rem;
 	line-height: 1;
 }
+h2{
+	text-align: center;
+}
 #encabezado img {
 	margin: 1.5rem 1rem 0 -0.5rem;
 	max-width: 100rem;
@@ -140,6 +143,11 @@ h4{
 /* Img del body */
 #img-index img{
 	width: 50%;
+	display: block;
+	margin: 1rem auto 0;
+}
+.img-mes img{
+	width: 35%;
 	display: block;
 	margin: 1rem auto 0;
 }
