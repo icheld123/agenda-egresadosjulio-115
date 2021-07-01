@@ -212,14 +212,13 @@
         </div>
     </div>
     <h3 id="hashtag"><i>#SigamosEnContacto.</i></h3>
-    <footer>
-        <p>Agenda de Egresados. <br>Copyright © 2021. e-Monitoria de Egresados.</p>
+    <footer class="footer">
+        <iframe src="imports/footer.html" onload="this.insertAdjacentHTML('afterend', (this.contentDocument.body||this.contentDocument).innerHTML);this.remove()"></iframe>
     </footer>
 </body>
-
 </html>
 <script type="text/javascript">
     $(function (){
-        $(".navbar").load("navbar.html");
+        $(".navbar").load("imports/navbar.html");
     });
 </script>

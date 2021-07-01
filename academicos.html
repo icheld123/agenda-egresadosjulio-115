@@ -17,10 +17,10 @@
     <link rel="stylesheet" type="text/css" href="styles.css">
     <script src="loadmore.js"></script>
 </head>
-
 <body class="contenedor">
     <header>
-        <div class="navbar"></div>
+        <div class="navbar">
+        </div>
     </header>
     <div id="contenedor">
         <div id="main">
@@ -64,19 +64,27 @@
                             </div>
                         </div>
                     </div>
+                    <div id="anuncio">
+                        <div id="contenido-anuncio">
+                            <p>Viviendo la Consejería Académica.</p>
+                            <p class="fecha">Fecha: 14 al 15 de julio de 2021</p>
+                            <p class="fecha">Hora: 08:00 a.m - 05:00 p.m</p>
+                            <a href="https://forms.office.com/pages/responsepage.aspx?id=elQA_LskT06dYXP8peud89syYcQr_olKj08mAa5QQ_JUMDkzR0dDUjVBWFFIRkU1OE81WDNISkk0UC4u"
+                                    target="_blank" id="botones" class="boton boton-amarillo d-block">Inscribirse</a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
     <h3 id="hashtag"><i>#SigamosEnContacto.</i></h3>
-    <footer>
-        <p>Agenda de Egresados. <br>Copyright © 2021. e-Monitoria de Egresados.</p>
+    <footer class="footer">
+        <iframe src="imports/footer.html" onload="this.insertAdjacentHTML('afterend', (this.contentDocument.body||this.contentDocument).innerHTML);this.remove()"></iframe>
     </footer>
 </body>
-
 </html>
 <script type="text/javascript">
     $(function (){
-        $(".navbar").load("navbar.html");
+        $(".navbar").load("imports/navbar.html");
     });
 </script>

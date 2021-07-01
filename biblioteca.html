@@ -34,6 +34,15 @@
                 <div class="post" id="page1">
                     <div id="anuncio">
                         <div id="contenido-anuncio">
+                            <p>Jornada de capacitación: base de datos Nature.</p>
+                            <p class="fecha">Fecha: 01 de julio de 2021</p>
+                            <p class="fecha">Hora: 03:00 p.m</p>
+                            <a href="https://forms.office.com/pages/responsepage.aspx?id=elQA_LskT06dYXP8peud89syYcQr_olKj08mAa5QQ_JUMDkzR0dDUjVBWFFIRkU1OE81WDNISkk0UC4u"
+                                    target="_blank" id="botones" class="boton boton-amarillo d-block">Inscribirse</a>
+                        </div>
+                    </div>
+                    <div id="anuncio">
+                        <div id="contenido-anuncio">
                             <p>Jornada de formación: inmersión en Inglés.</p>
                             <p class="fecha">Fecha: 01 de julio de 2021</p>
                             <p class="fecha">Hora: 06:30 p.m</p>
@@ -63,14 +72,13 @@
         </div>
     </div>
     <h3 id="hashtag"><i>#SigamosEnContacto.</i></h3>
-    <footer>
-        <p>Agenda de Egresados. <br>Copyright © 2021. e-Monitoria de Egresados.</p>
+    <footer class="footer">
+        <iframe src="imports/footer.html" onload="this.insertAdjacentHTML('afterend', (this.contentDocument.body||this.contentDocument).innerHTML);this.remove()"></iframe>
     </footer>
 </body>
-
 </html>
 <script type="text/javascript">
     $(function (){
-        $(".navbar").load("navbar.html");
+        $(".navbar").load("imports/navbar.html");
     });
 </script>
