@@ -15,16 +15,22 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
     <link rel="stylesheet" href="normalize_reset.css">
     <link rel="stylesheet" type="text/css" href="styles.css">
+    <script src="w3data.js"></script>
     <script src="loadmore.js"></script>
 </head>
 
 <body class="contenedor">
     <header>
-        <div class="navbar"></div>
+        <div class="navbar" w3-include-HTML="imports/navbar.html"></div>
     </header>
     <div id="contenedor">
         <div id="main">
             <h3>Estos son los eventos de biblioteca del mes de Julio.</h3>
+            <div id="paginacion">
+                <a href="#" class="boton boton-amarillo" id="prev">Anterior</a>
+                <a href="#" class="boton boton-amarillo" id="next">Siguiente</a>
+            </div>
+            <h4>¡Para ingresar al evento, sólo debes dar clic en el ícono de la página bajo cada evento!</h4>
             <div class="pagination" id="contenedor-anuncios">
                 <div class="post" id="page1">
                     <div id="anuncio">
@@ -60,7 +66,58 @@
                         </div>
                     </div>
                 </div>
-            </div>
+            </div>   
+            <div class="pagination" id="contenedor-anuncios">
+                <div class="post" id="page2">
+                    <div id="anuncio">
+                        <div id="contenido-anuncio">
+                            <p>Mendeley como soporte para la organización de tu Biblioteca digital.</p>
+                            <p class="fecha">Fecha: 06 de julio de 2021</p>
+                            <p class="fecha">Hora: 10:00 a.m</p>
+                            <a href="https://elsevier.zoom.us/webinar/register/WN_riL3eDxgREmpLaRA_PCmVA"
+                                target="_blank" id="botones" class="boton boton-amarillo d-block">Inscribirse</a>
+                        </div>
+                    </div>
+                    <div id="anuncio">
+                        <div id="contenido-anuncio">
+                            <p>Jornada de formación: excel intermedio sesión 13.</p>
+                            <p class="fecha">Fecha: 07 de julio de 2021</p>
+                            <p class="fecha">Hora: 07:00 p.m</p>
+                            <p class="codigo-acceso">Código de acceso: 813654</p>
+                            <div id="via-evento">
+                                <a href="https://unad-edu-co.zoom.us/j/95961226230#success" id="" target="_blank"><img
+                                        src="img/zoom.png" alt="Evento via zoom" class="thumbnails" /></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="anuncio">
+                        <div id="contenido-anuncio">
+                            <p>Sesión Oxford: región Caribe.</p>
+                            <p class="fecha">Fecha: 08 de julio de 2021</p>
+                            <p class="fecha">Hora: 09:00 a.m</p>
+                            <p class="codigo-acceso">Código de acceso: 813654</p>
+                            <a href="https://register.gotowebinar.com/register/4675597746103843856"
+                            target="_blank" id="botones" class="boton boton-amarillo d-block">Inscribirse</a>
+                        </div>
+                    </div>
+                </div>
+            </div>     
+            <div class="pagination" id="contenedor-anuncios">
+                <div class="post" id="page3">
+                    <div id="anuncio">
+                        <div id="contenido-anuncio">
+                            <p>Club de lectura "Constelación de las palabras".</p>
+                            <p class="fecha">Fecha: 10 de julio de 2021</p>
+                            <p class="fecha">Hora: 07:00 p.m</p>
+                            <p class="codigo-acceso">Código de acceso: 661481</p>
+                            <div id="via-evento">
+                                <a href="https://unad-edu-co.zoom.us/j/95624035851#success" id="" target="_blank"><img
+                                        src="img/zoom.png" alt="Evento via zoom" class="thumbnails" /></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>      
         </div>
     </div>
     <h3 id="hashtag"><i>#SigamosEnContacto.</i></h3>
@@ -71,8 +128,6 @@
 </body>
 
 </html>
-<script type="text/javascript">
-    $(function () {
-        $(".navbar").load("imports/navbar.html");
-    });
+<script>
+    w3IncludeHTML();
 </script>

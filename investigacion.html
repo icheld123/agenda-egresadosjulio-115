@@ -15,23 +15,18 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
     <link rel="stylesheet" href="normalize_reset.css">
     <link rel="stylesheet" type="text/css" href="styles.css">
+    <script src="w3data.js"></script>
     <script src="loadmore.js"></script>
 </head>
 
 <body class="contenedor">
     <header>
-        <div class="navbar">
-            <iframe src="imports/navbar.html"
-            onload="this.insertAdjacentHTML('afterend', (this.contentDocument.body||this.contentDocument).innerHTML);this.remove()"></iframe>
-        </div>
+        <div class="navbar" w3-include-HTML="imports/navbar.html"></div>
     </header>
     <div id="contenedor">
         <div id="main">
             <h3>Estos son los eventos de investigación del mes de Julio.</h3>
-            <div id="paginacion">
-                <a href="#" class="boton boton-amarillo" id="prev">Anterior</a>
-                <a href="#" class="boton boton-amarillo" id="next">Siguiente</a>
-            </div>
+            <h4>¡Para ingresar al evento, sólo debes dar clic en el ícono de la página bajo cada evento!</h4>
             <div class="pagination" id="contenedor-anuncios">
                 <div class="post" id="page1">
                     <div id="anuncio">
@@ -61,26 +56,6 @@
                     </div>
                 </div>
             </div>
-            <div class="pagination" id="contenedor-anuncios">
-                <div class="post" id="page2">
-                    <div id="anuncio">
-                        <div id="contenido-anuncio">
-                            <p>Desarrollo Y Dirección De Proyectos De Grado En Un Modelo De E-Investigación–Sesión 2.
-                            </p>
-                            <p class="fecha">Fecha: 12 de julio de 2021</p>
-                            <p class="fecha">Hora: 07:00 p.m - 08:00 p.m</p>
-                            <div id="botones-evento">
-                                <a href="https://docs.google.com/forms/d/e/1FAIpQLScH-df3uZk8-JLQUVlqmfYhGvWJVhDk4uR8_ZB7JTTIooNoyQ/viewform"
-                                    target="_blank" id="botones" class="boton boton-amarillo d-block">Inscribirse</a>
-                                <div id="via-evento">
-                                    <a href="https://meet.jit.si/EscuelaDirectoresUNAD2021" id="" target="_blank"><img
-                                            src="img/jitsi.jpeg" alt="Evento via jitsi" class="thumbnails" /></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
         </div>
     </div>
     <h3 id="hashtag"><i>#SigamosEnContacto.</i></h3>
@@ -91,3 +66,6 @@
 </body>
 
 </html>
+<script>
+    w3IncludeHTML();
+</script>
